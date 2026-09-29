@@ -10,9 +10,14 @@ body {
 }
 
 .container {
+    width: 500px;
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin: 50px auto;
+    padding: 20px 20px 60px;
+    border: 2px solid #0EA5E9;
+    border-radius: 10px;
 }
 
 h1 {
@@ -21,6 +26,7 @@ h1 {
     font-family: Oxanium;
     margin:0;
     padding: 20px 0 10px 0;
+    text-shadow: 2px 2px 0 #111;
 }
 
 h2 {
@@ -32,6 +38,8 @@ h2 {
     margin: 0;
     padding-top: 10px;
     border-radius: 10px;
+    outline: 1px dotted #ccc;
+    outline-offset: -5px;
 }
 
 .button-row {
@@ -48,16 +56,20 @@ button {
     color: #0EA5E9;
     padding: 5px 13px 3px;
     margin-top: 10px;
-    
 }
+button:hover {
+    outline: 3px solid #0EA5E9;
+}
+
 
 #newgame {
     background-color: #0EA5E9;
     color: #111;
-    margin-top: 60px;
+    margin-top: 30px;
     width: 200px;
     font-size: 1.5rem;
 }
 #undo-home, #undo-guest {
     margin-top: 30px;
+    background-color: #0369A1;
 }
