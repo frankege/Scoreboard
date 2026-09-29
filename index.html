@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h1>HOME</h1>
+                <h2 id="score-home">0</h2>
+                <div class="button-row">
+                    <button onclick="add1home()">+1</button>
+                    <button onclick="add2home()">+2</button>
+                    <button onclick="add3home()">+3</button>
+                </div>
+                <button onclick="undohome()">Undo last</button>
+            </div>
+            <div>
+                <h1>GUEST</h1>
+                <h2 id="score-guest">0</h2>
+                <div class="button-row">
+                    <button onclick="add1guest()">+1</button>
+                    <button onclick="add2guest()">+2</button>
+                    <button onclick="add3guest()">+3</button>
+                </div>
+                <button onclick="undoguest()">Undo last</button>
+            </div>
+        </div>
+        <div>
+            <button id="newgame" onclick="newgame()">New game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
